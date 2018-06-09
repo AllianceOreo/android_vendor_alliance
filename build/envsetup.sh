@@ -34,8 +34,8 @@ function alliance_device_combos()
 
     while IFS= read -r device
     do
-        add_lunch_combo "alliance${device}-${variant1}"
-        add_lunch_combo "alliance${device}-${variant2}"
+        add_lunch_combo "alliance_${device}-${variant1}"
+        add_lunch_combo "alliance_${device}-${variant2}"
     done < "${list_file}"
 }
 
